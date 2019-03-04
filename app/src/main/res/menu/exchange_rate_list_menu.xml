@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu_erl_action_calendar"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_month"
+        android:title="Search"/>
+
+    <item android:id="@+id/menu_erl_action_search"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search"/>
+
+</menu>

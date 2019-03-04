@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ExchangeRates</string>
+    <string name="search">Search</string>
+    <string name="not_found">Not found</string>
+</resources>

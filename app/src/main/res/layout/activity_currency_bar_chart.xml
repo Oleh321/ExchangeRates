@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.CurrencyBarChartActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:id="@+id/act_cur_barchart_appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textColor="@android:color/white"
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="From" />
+
+            <Button
+                android:textSize="18sp"
+                android:id="@+id/act_cur_barchart_btn_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="01.01.2019" />
+
+            <TextView
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textColor="@android:color/white"
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="To" />
+
+            <Button
+                android:textSize="18sp"
+                android:id="@+id/act_cur_barchart_btn_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="21.02.2019" />
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/act_cur_barchart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/act_cur_barchart_appbarlayout"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_margin="8dp" />
+
+</RelativeLayout>
